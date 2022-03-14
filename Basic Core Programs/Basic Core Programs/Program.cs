@@ -9,6 +9,7 @@ namespace Basic_Core_Programs
             Console.WriteLine("Choose 1 for Flipcoin");
             Console.WriteLine("Choose 2 for Leap year");
             Console.WriteLine("Choose 3 for Power of 2");
+            Console.WriteLine("Choose 4 for Harmonic number");
             int option = int.Parse(Console.ReadLine());
 
             switch (option)
@@ -30,6 +31,12 @@ namespace Basic_Core_Programs
                     Console.WriteLine("Enter power of 2 ");
                     int power = int.Parse(Console.ReadLine());
                     powerOfTwo.CheckPowerOfTwo(power);
+                    break;
+                case 4:
+                    HarmonicNumber harmonic = new HarmonicNumber();
+                    Console.WriteLine("Enter the number of harmonic ");
+                    int term = int.Parse(Console.ReadLine());
+                    harmonic.PrintHarmonic(term);
                     break;
                 default:
                     Console.WriteLine("Input valid option");
