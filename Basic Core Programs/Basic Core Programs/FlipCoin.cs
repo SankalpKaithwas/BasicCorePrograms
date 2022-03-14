@@ -4,8 +4,10 @@ namespace Basic_Core_Programs
 {
     internal class FlipCoin
     {
-        public void FlipCoinPercentage(int number)
+        public void FlipCoinPercentage()
         {
+            Console.WriteLine("Enter numbers of time coin needs to flip");
+            int number = int.Parse(Console.ReadLine());
             int headCount = 0;
             int tailCount = 0;
             if (number > 0)

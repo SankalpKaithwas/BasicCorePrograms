@@ -4,8 +4,10 @@ namespace Basic_Core_Programs
 {
     internal class LeapYear
     {
-        public void CheckLeapYear(int year)
+        public void CheckLeapYear()
         {
+            Console.WriteLine("Enter year to check if it is leap year or not");
+            int year = int.Parse(Console.ReadLine());
             int count = 0;
             int temp = 1;
             while (temp <= year)

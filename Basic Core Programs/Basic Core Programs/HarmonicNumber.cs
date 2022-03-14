@@ -4,8 +4,10 @@ namespace Basic_Core_Programs
 {
     internal class HarmonicNumber
     {
-        public void PrintHarmonic(int term)
+        public void PrintHarmonic()
         {
+            Console.WriteLine("Enter the number of harmonic ");
+            int term = int.Parse(Console.ReadLine());
             string result;
             for (int i = 1; i <= term; i++)
             {

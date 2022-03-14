@@ -14,52 +14,46 @@ namespace Basic_Core_Programs
             Console.WriteLine("Choose 6 for Quotient and Remainder");
             Console.WriteLine("Choose 7 for Swap two numbers");
             Console.WriteLine("Choose 8 to check number is even or odd");
+            Console.WriteLine("Choose 9 to check Alphabet is vowel or consonant");
             int option = int.Parse(Console.ReadLine());
 
             switch (option)
             {
                 case 1:
                     FlipCoin percentage = new FlipCoin();
-                    Console.WriteLine("Enter numbers of time coin needs to flip");
-                    int input = int.Parse(Console.ReadLine());
-                    percentage.FlipCoinPercentage(input);
+                    percentage.FlipCoinPercentage();
                     break;
                 case 2:
                     LeapYear checkLeapYear = new LeapYear();
-                    Console.WriteLine("Enter year to check if it is leap year or not");
-                    int year = int.Parse(Console.ReadLine());
-                    checkLeapYear.CheckLeapYear(year);
+                    checkLeapYear.CheckLeapYear();
                     break;
                 case 3:
                     PowerOfTwo powerOfTwo = new PowerOfTwo();
-                    Console.WriteLine("Enter power of 2 ");
-                    int power = int.Parse(Console.ReadLine());
-                    powerOfTwo.CheckPowerOfTwo(power);
+                    powerOfTwo.CheckPowerOfTwo();
                     break;
                 case 4:
                     HarmonicNumber harmonic = new HarmonicNumber();
-                    Console.WriteLine("Enter the number of harmonic ");
-                    int term = int.Parse(Console.ReadLine());
-                    harmonic.PrintHarmonic(term);
+                    harmonic.PrintHarmonic();
                     break;
                 case 5:
                     PrimeFactor primeFactor = new PrimeFactor();
-                    Console.WriteLine("Enter the number ");
-                    int number = int.Parse(Console.ReadLine());
-                    primeFactor.PrimeFactors(number);
+                    primeFactor.PrimeFactors();
                     break;
                 case 6:
                     QuotientAndRemainder check = new QuotientAndRemainder();
-                    Console.WriteLine("Enter a number ");
-                    int checkQuotient = int.Parse(Console.ReadLine());
-                    check.QuotientsAndRemainders(checkQuotient);
+                    check.QuotientsAndRemainders();
                     break;
                 case 7:
                     Swap swap = new Swap();
                     swap.SwapNumber();
                     break;
-                case 8: EvenOdd evenOrOdd = new EvenOdd();
+                case 8:
+                    EvenOdd evenOrOdd = new EvenOdd();
                     evenOrOdd.isEven();
+                    break;
+                case 9:
+                    VowelConsonant vowelOrConsonant = new VowelConsonant();
+                    vowelOrConsonant.isVowel();
                     break;
                 default:
                     Console.WriteLine("Input valid option");

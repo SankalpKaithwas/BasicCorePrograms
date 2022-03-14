@@ -5,8 +5,10 @@ namespace Basic_Core_Programs
     internal class PrimeFactor
     {
 
-        public void PrimeFactors(int number)
+        public void PrimeFactors()
         {
+            Console.WriteLine("Enter the number ");
+            int number = int.Parse(Console.ReadLine());
 
             Console.WriteLine($"Factors of {number} are: ");
             for (int i = 1; i * i <= number; i++)
@@ -17,11 +19,8 @@ namespace Basic_Core_Programs
                     {
                         Console.WriteLine(i);
                     }
-                    else { Console.WriteLine("No factors must be prime number"); }
                 }
             }
-
-
         }
         public bool isPrime(int number)
         {

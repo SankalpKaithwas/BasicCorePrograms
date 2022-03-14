@@ -4,8 +4,10 @@ namespace Basic_Core_Programs
 {
     internal class QuotientAndRemainder
     {
-        public void QuotientsAndRemainders(int number)
+        public void QuotientsAndRemainders()
         {
+            Console.WriteLine("Enter a number ");
+            int number = int.Parse(Console.ReadLine());
             int quotient;
             int rem;
             Console.WriteLine("Quotients are: ");
@@ -15,7 +17,6 @@ namespace Basic_Core_Programs
                 {
                     quotient = number / i; Console.Write(quotient + " ");
                 }
-
 
             }
             Console.WriteLine();
