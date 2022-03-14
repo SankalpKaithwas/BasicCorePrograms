@@ -11,6 +11,7 @@ namespace Basic_Core_Programs
             Console.WriteLine("Choose 3 for Power of 2");
             Console.WriteLine("Choose 4 for Harmonic number");
             Console.WriteLine("Choose 5 for Prime factors");
+            Console.WriteLine("Choose 6 for Quotient and Remainder");
             int option = int.Parse(Console.ReadLine());
 
             switch (option)
@@ -44,6 +45,12 @@ namespace Basic_Core_Programs
                     Console.WriteLine("Enter the number ");
                     int number = int.Parse(Console.ReadLine());
                     primeFactor.PrimeFactors(number);
+                    break;
+                case 6:
+                    QuotientAndRemainder check = new QuotientAndRemainder();
+                    Console.WriteLine("Enter a number ");
+                    int checkQuotient = int.Parse(Console.ReadLine());
+                    check.QuotientsAndRemainders(checkQuotient);
                     break;
                 default:
                     Console.WriteLine("Input valid option");
