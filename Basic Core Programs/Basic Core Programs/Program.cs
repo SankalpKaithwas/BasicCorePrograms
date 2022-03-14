@@ -12,6 +12,7 @@ namespace Basic_Core_Programs
             Console.WriteLine("Choose 4 for Harmonic number");
             Console.WriteLine("Choose 5 for Prime factors");
             Console.WriteLine("Choose 6 for Quotient and Remainder");
+            Console.WriteLine("Choose 7 for Swap two numbers");
             int option = int.Parse(Console.ReadLine());
 
             switch (option)
@@ -51,6 +52,10 @@ namespace Basic_Core_Programs
                     Console.WriteLine("Enter a number ");
                     int checkQuotient = int.Parse(Console.ReadLine());
                     check.QuotientsAndRemainders(checkQuotient);
+                    break;
+                case 7:
+                    Swap swap = new Swap();
+                    swap.SwapNumber();
                     break;
                 default:
                     Console.WriteLine("Input valid option");
