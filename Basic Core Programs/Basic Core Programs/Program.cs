@@ -13,6 +13,7 @@ namespace Basic_Core_Programs
             Console.WriteLine("Choose 5 for Prime factors");
             Console.WriteLine("Choose 6 for Quotient and Remainder");
             Console.WriteLine("Choose 7 for Swap two numbers");
+            Console.WriteLine("Choose 8 to check number is even or odd");
             int option = int.Parse(Console.ReadLine());
 
             switch (option)
@@ -56,6 +57,9 @@ namespace Basic_Core_Programs
                 case 7:
                     Swap swap = new Swap();
                     swap.SwapNumber();
+                    break;
+                case 8: EvenOdd evenOrOdd = new EvenOdd();
+                    evenOrOdd.isEven();
                     break;
                 default:
                     Console.WriteLine("Input valid option");
