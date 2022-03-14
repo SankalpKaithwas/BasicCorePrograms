@@ -6,15 +6,16 @@ namespace Basic_Core_Programs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Choose 1 for Flipcoin");
-            Console.WriteLine("Choose 2 for Leap year");
-            Console.WriteLine("Choose 3 for Power of 2");
-            Console.WriteLine("Choose 4 for Harmonic number");
-            Console.WriteLine("Choose 5 for Prime factors");
-            Console.WriteLine("Choose 6 for Quotient and Remainder");
-            Console.WriteLine("Choose 7 for Swap two numbers");
-            Console.WriteLine("Choose 8 to check number is even or odd");
-            Console.WriteLine("Choose 9 to check Alphabet is vowel or consonant");
+            Console.WriteLine("Choose 1: Flipcoin");
+            Console.WriteLine("Choose 2: Leap year");
+            Console.WriteLine("Choose 3: Power of 2");
+            Console.WriteLine("Choose 4: Harmonic number");
+            Console.WriteLine("Choose 5: Prime factors");
+            Console.WriteLine("Choose 6: Quotient and Remainder");
+            Console.WriteLine("Choose 7: Swap two numbers");
+            Console.WriteLine("Choose 8: Check number is even or odd");
+            Console.WriteLine("Choose 9: Check Alphabet is vowel or consonant");
+            Console.WriteLine("Choose 10: To find the largest number");
             int option = int.Parse(Console.ReadLine());
 
             switch (option)
@@ -54,6 +55,10 @@ namespace Basic_Core_Programs
                 case 9:
                     VowelConsonant vowelOrConsonant = new VowelConsonant();
                     vowelOrConsonant.isVowel();
+                    break;
+                case 10:
+                    Largest largest = new Largest();
+                    largest.LargestNumber();
                     break;
                 default:
                     Console.WriteLine("Input valid option");
